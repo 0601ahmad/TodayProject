@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: examples.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.232 s <<< FAILURE! - in examples.ExamplesTest
+testParallel  Time elapsed: 4.227 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+js failed:
+>>>>
+01: zipocde
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "zipocde" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/users/mynewOne.feature:51
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'ahmad'
+  'James Bond'
+
+classpath:examples/users/mynewOne.feature:76
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'farhad'
+  'James Bond'
+
+classpath:examples/users/mynewOne.feature:76
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'ghafoori'
+  'James Bond'
+
+classpath:examples/users/mynewOne.feature:76 ==> expected: <0> but was: <4>
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+
